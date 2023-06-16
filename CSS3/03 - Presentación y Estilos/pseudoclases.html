@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          /* Pseudoclases : */
+          
+          /* Enlaces no visitados */
+          a:link{
+               color: orange;
+          }
+
+          /* Enlaces visitados */
+          a:visited{
+               color: violet;
+          }
+
+
+          /* Input seleccionado */
+          input:focus{
+               background: red;
+          }
+
+
+          /* Pasar cursor encima de mis elementos */
+          a:hover{
+               color: red;
+               font-size: 20px;
+          }
+
+
+          /* Pseudoclase de negacion */
+          p:not(.miparrafo){
+               color: blue;
+          }
+
+
+
+     </style>
+
+
+</head>
+<body>
+     <a href="#">Este es un enlace</a>
+     <input type="text">
+     <br>
+     <br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam dolor quaerat, dolores maiores rerum ducimus doloribus itaque excepturi odio quam voluptates, beatae, tempora saepe ea totam temporibus. Eligendi, hic.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam dolor quaerat, dolores maiores rerum ducimus doloribus itaque excepturi odio quam voluptates, beatae, tempora saepe ea totam temporibus. Eligendi, hic.</p>
+     <p class="miparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam dolor quaerat, dolores maiores rerum ducimus doloribus itaque excepturi odio quam voluptates, beatae, tempora saepe ea totam temporibus. Eligendi, hic.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam dolor quaerat, dolores maiores rerum ducimus doloribus itaque excepturi odio quam voluptates, beatae, tempora saepe ea totam temporibus. Eligendi, hic.</p>
+</body>
+</html>

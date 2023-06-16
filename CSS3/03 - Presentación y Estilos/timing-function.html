@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          .container{
+               width: 800px;
+               margin: auto;
+          }
+          
+          section{
+               width: 100%;
+               height: auto;
+               border: 3px solid crimson;
+               border-radius: 10px;
+               padding: 20px;
+               margin: 20px;
+               display: inline-block;
+          }
+
+          h1{
+               font-family: sans-serif;
+               text-align: center;
+               font-weight: normal;
+               letter-spacing: 2px;
+               font-size: 2em;
+               text-transform: uppercase;
+          }
+
+          section div{
+               width: 100px;
+               height: 100px;
+               margin: 20px 0 0;
+               background: crimson;
+               border-radius: 10px;
+               animation: animate 5s 1 forwards normal;
+          }
+
+          .linear{
+              animation-timing-function: linear; 
+          }
+
+          .ease{
+               animation-timing-function: ease; 
+          }
+
+          .easein{
+               animation-timing-function: ease-in; 
+          }
+
+          .easeout{
+               animation-timing-function: ease-out; 
+          }
+
+          .easeinout{
+               animation-timing-function: ease-in-out; 
+          }
+
+          .steps{
+               animation-timing-function: step-start;
+               animation-timing-function: step-end;
+               animation-timing-function: steps(4, jump-start);
+               animation-timing-function: steps(4, jump-end);
+               animation-timing-function: steps(4, jump-both);
+               animation-timing-function: steps(4, jump-none);
+          }
+
+          .cubic{
+               animation-timing-function: cubic-bezier(0,1,1,.05);
+          }
+
+
+          @keyframes animate {
+               0%{
+                    transform: translateX(0);
+               }
+
+               100%{
+                    transform: translateX(650px);
+               }
+          }
+
+
+     </style>
+
+
+</head>
+<body>
+     <div class="container">
+          <section>
+               <h1>Linear</h1>
+               <div class="linear"></div>
+          </section>
+     
+          <section>
+               <h1>Ease</h1>
+               <div class="ease"></div>
+          </section>
+     
+          <section>
+               <h1>Ease-in</h1>
+               <div class="easein"></div>
+          </section>
+     
+          <section>
+               <h1>Ease-out</h1>
+               <div class="easeout"></div>
+          </section>
+     
+          <section>
+               <h1>Ease-in-out</h1>
+               <div class="easeinout"></div>
+          </section>
+     
+          <section>
+               <h1>Steps</h1>
+               <div class="steps"></div>
+          </section>
+     
+          <section>
+               <h1>Cubic bezier</h1>
+               <div class="cubic"></div>
+          </section>
+     </div>
+</body>
+</html>

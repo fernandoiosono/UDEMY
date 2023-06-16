@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          div{
+               width: 200px;
+               height: 200px;
+               background: turquoise;
+               margin: 10px;
+               border: 1px solid #000;
+
+               /* Por defecto - Se aplica en vertical */
+               display: block;
+
+               /* En linea - Horizontal ignora width y height */
+               display: inline;
+
+               /* En linea - Horizontal NO ignora width y height */
+               display: inline-block;
+
+               /* Actua como lista */
+               display: list-item;
+
+               /* Actúa como la celda de una tabla. Es el comportamiento de etiquetas como <th> o <td>. */
+               display: table-cell;
+
+               /* Actúa como la fila de una tabla. Es el comportamiento de etiquetas como <tr>. */
+               display: table-row;
+
+               /* Ocultar */
+               display: none;
+               visibility: hidden;
+          }
+
+
+
+     </style>
+
+
+
+</head>
+<body>
+     <div>Elemento #1</div>
+     <div>Elemento #2</div>
+     <div style="display: none;">Elemento #3</div>
+     <div>Elemento #4</div>
+</body>
+</html>
