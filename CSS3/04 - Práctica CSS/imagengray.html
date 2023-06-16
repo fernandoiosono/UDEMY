@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Imagen Gray</title>
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body{
+               background: #070c15;
+          }
+
+          .box{
+               position: relative;
+               width: 500px;
+               height: 500px;
+               margin: 70px auto;
+          }
+
+          .box textarea{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               max-width: 100%;
+               height: 100%;
+               background: url(img/image6.png);
+               opacity: 0.5;
+               filter: grayscale(1);
+               resize: none;
+               border: none;
+          }
+
+          .box textarea:nth-child(2){
+               filter: grayscale(0);
+               opacity: 1;
+               width: 200px;
+               resize: horizontal;
+               border-right: 2px solid #FFF;
+          }
+
+
+     </style>
+
+
+</head>
+<body>
+     <div class="box">
+          <textarea readonly></textarea>
+          <textarea readonly></textarea>
+     </div>
+</body>
+</html>
